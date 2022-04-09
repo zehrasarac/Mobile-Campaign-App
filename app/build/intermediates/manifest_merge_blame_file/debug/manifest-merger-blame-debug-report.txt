@@ -1,0 +1,239 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.locationbasedcampaign"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml
+10    <!--
+11         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+12         Google Maps Android API v2, but you must specify either coarse or fine
+13         location permissions for the 'MyLocation' functionality.
+14    -->
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml:9:5-79
+15-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml:9:22-76
+16
+17    <!-- Include required permissions for Google Maps API to run. -->
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->[com.google.android.gms:play-services-maps:17.0.0] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/7568ba76e7ca3967850522f169ef779d/jetified-play-services-maps-17.0.0/AndroidManifest.xml:23:5-79
+18-->[com.google.android.gms:play-services-maps:17.0.0] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/7568ba76e7ca3967850522f169ef779d/jetified-play-services-maps-17.0.0/AndroidManifest.xml:23:22-76
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->[com.google.android.gms:play-services-maps:17.0.0] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/7568ba76e7ca3967850522f169ef779d/jetified-play-services-maps-17.0.0/AndroidManifest.xml:24:5-67
+19-->[com.google.android.gms:play-services-maps:17.0.0] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/7568ba76e7ca3967850522f169ef779d/jetified-play-services-maps-17.0.0/AndroidManifest.xml:24:22-64
+20
+21    <uses-feature
+21-->[com.google.android.gms:play-services-maps:17.0.0] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/7568ba76e7ca3967850522f169ef779d/jetified-play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+22        android:glEsVersion="0x00020000"
+22-->[com.google.android.gms:play-services-maps:17.0.0] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/7568ba76e7ca3967850522f169ef779d/jetified-play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+23        android:required="true" />
+23-->[com.google.android.gms:play-services-maps:17.0.0] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/7568ba76e7ca3967850522f169ef779d/jetified-play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+24
+25    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+25-->[com.google.android.gms:play-services-measurement-api:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/0526cb993bcd3b17a19f28f783b8b1d9/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:24:5-68
+25-->[com.google.android.gms:play-services-measurement-api:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/0526cb993bcd3b17a19f28f783b8b1d9/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:24:22-65
+26    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+26-->[com.google.firebase:firebase-iid:20.0.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/14092e63484c408036652bf98e042e26/jetified-firebase-iid-20.0.2/AndroidManifest.xml:26:5-82
+26-->[com.google.firebase:firebase-iid:20.0.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/14092e63484c408036652bf98e042e26/jetified-firebase-iid-20.0.2/AndroidManifest.xml:26:22-79
+27    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+27-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/e78ea75fc38ff4415d281ae9feb22a4f/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:26:5-110
+27-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/e78ea75fc38ff4415d281ae9feb22a4f/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:26:22-107
+28
+29    <application
+29-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml:11:5-43:19
+30        android:allowBackup="true"
+30-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml:12:9-35
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.1.0] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/bcfc0b80df78591183083cc148e1cf2c/core-1.1.0/AndroidManifest.xml:24:18-86
+32        android:debuggable="true"
+33        android:icon="@mipmap/ic_launcher"
+33-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml:13:9-43
+34        android:label="@string/app_name"
+34-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml:14:9-41
+35        android:roundIcon="@mipmap/ic_launcher_round"
+35-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml:15:9-54
+36        android:supportsRtl="true"
+36-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml:16:9-35
+37        android:testOnly="true"
+38        android:theme="@style/AppTheme" >
+38-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml:17:9-40
+39        <activity android:name="com.example.locationbasedcampaign.AdminPanelActivity" />
+39-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml:18:9-65
+39-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml:18:19-53
+40        <activity android:name="com.example.locationbasedcampaign.ui.RegisterActivity" />
+40-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml:19:9-57
+40-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml:19:19-54
+41        <activity android:name="com.example.locationbasedcampaign.ui.MainActivity" />
+41-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml:20:9-53
+41-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml:20:19-50
+42        <!--
+43             The API key for Google Maps-based APIs is defined as a string resource.
+44             (See the file "res/values/google_maps_api.xml").
+45             Note that the API key is linked to the encryption key used to sign the APK.
+46             You need a different API key for each encryption key, including the release key that is used to
+47             sign the APK for publishing.
+48             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+49        -->
+50        <meta-data
+50-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml:29:9-31:71
+51            android:name="com.google.android.geo.API_KEY"
+51-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml:30:13-58
+52            android:value="AIzaSyAcvwD1LrvVvUItl_tA0uhwRtxPDXeFFto" />
+52-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml:31:13-68
+53
+54        <activity
+54-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml:33:9-35:59
+55            android:name="com.example.locationbasedcampaign.ui.MapsActivity"
+55-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml:34:13-44
+56            android:label="@string/title_activity_maps" />
+56-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml:35:13-56
+57        <activity android:name="com.example.locationbasedcampaign.ui.LoginActivity" >
+57-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml:36:9-42:20
+57-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml:36:19-51
+58            <intent-filter>
+58-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml:37:13-41:29
+59                <action android:name="android.intent.action.MAIN" />
+59-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml:38:17-69
+59-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml:38:25-66
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+61-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml:40:17-77
+61-->/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/src/main/AndroidManifest.xml:40:27-74
+62            </intent-filter>
+63        </activity>
+64        <!-- Needs to be explicitly declared on P+ -->
+65        <uses-library
+65-->[com.google.android.gms:play-services-maps:17.0.0] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/7568ba76e7ca3967850522f169ef779d/jetified-play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+66            android:name="org.apache.http.legacy"
+66-->[com.google.android.gms:play-services-maps:17.0.0] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/7568ba76e7ca3967850522f169ef779d/jetified-play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+67            android:required="false" />
+67-->[com.google.android.gms:play-services-maps:17.0.0] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/7568ba76e7ca3967850522f169ef779d/jetified-play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+68
+69        <service
+69-->[com.google.android.gms:play-services-measurement-api:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/0526cb993bcd3b17a19f28f783b8b1d9/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:27:9-33:19
+70            android:name="com.google.firebase.components.ComponentDiscoveryService"
+70-->[com.google.android.gms:play-services-measurement-api:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/0526cb993bcd3b17a19f28f783b8b1d9/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:28:13-84
+71            android:directBootAware="true"
+71-->[com.google.firebase:firebase-common:19.3.0] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/3deb10f8139ef5717b3d54ada2a19ca4/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+72            android:exported="false" >
+72-->[com.google.android.gms:play-services-measurement-api:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/0526cb993bcd3b17a19f28f783b8b1d9/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:29:13-37
+73            <meta-data
+73-->[com.google.android.gms:play-services-measurement-api:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/0526cb993bcd3b17a19f28f783b8b1d9/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:30:13-32:85
+74                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+74-->[com.google.android.gms:play-services-measurement-api:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/0526cb993bcd3b17a19f28f783b8b1d9/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:31:17-139
+75                android:value="com.google.firebase.components.ComponentRegistrar" />
+75-->[com.google.android.gms:play-services-measurement-api:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/0526cb993bcd3b17a19f28f783b8b1d9/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:32:17-82
+76            <meta-data
+76-->[com.google.firebase:firebase-iid:20.0.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/14092e63484c408036652bf98e042e26/jetified-firebase-iid-20.0.2/AndroidManifest.xml:32:13-34:85
+77                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+77-->[com.google.firebase:firebase-iid:20.0.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/14092e63484c408036652bf98e042e26/jetified-firebase-iid-20.0.2/AndroidManifest.xml:33:17-96
+78                android:value="com.google.firebase.components.ComponentRegistrar" />
+78-->[com.google.firebase:firebase-iid:20.0.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/14092e63484c408036652bf98e042e26/jetified-firebase-iid-20.0.2/AndroidManifest.xml:34:17-82
+79        </service>
+80
+81        <receiver
+81-->[com.google.firebase:firebase-iid:20.0.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/14092e63484c408036652bf98e042e26/jetified-firebase-iid-20.0.2/AndroidManifest.xml:37:9-44:20
+82            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+82-->[com.google.firebase:firebase-iid:20.0.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/14092e63484c408036652bf98e042e26/jetified-firebase-iid-20.0.2/AndroidManifest.xml:38:13-78
+83            android:exported="true"
+83-->[com.google.firebase:firebase-iid:20.0.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/14092e63484c408036652bf98e042e26/jetified-firebase-iid-20.0.2/AndroidManifest.xml:39:13-36
+84            android:permission="com.google.android.c2dm.permission.SEND" >
+84-->[com.google.firebase:firebase-iid:20.0.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/14092e63484c408036652bf98e042e26/jetified-firebase-iid-20.0.2/AndroidManifest.xml:40:13-73
+85            <intent-filter>
+85-->[com.google.firebase:firebase-iid:20.0.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/14092e63484c408036652bf98e042e26/jetified-firebase-iid-20.0.2/AndroidManifest.xml:41:13-43:29
+86                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+86-->[com.google.firebase:firebase-iid:20.0.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/14092e63484c408036652bf98e042e26/jetified-firebase-iid-20.0.2/AndroidManifest.xml:42:17-81
+86-->[com.google.firebase:firebase-iid:20.0.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/14092e63484c408036652bf98e042e26/jetified-firebase-iid-20.0.2/AndroidManifest.xml:42:25-78
+87            </intent-filter>
+88        </receiver>
+89
+90        <activity
+90-->[com.google.android.gms:play-services-base:17.0.0] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/2be5ef2959ea5355d833f1cf7554bfda/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+91            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+91-->[com.google.android.gms:play-services-base:17.0.0] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/2be5ef2959ea5355d833f1cf7554bfda/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+92            android:exported="false"
+92-->[com.google.android.gms:play-services-base:17.0.0] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/2be5ef2959ea5355d833f1cf7554bfda/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+93            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+93-->[com.google.android.gms:play-services-base:17.0.0] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/2be5ef2959ea5355d833f1cf7554bfda/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+94
+95        <receiver
+95-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/e78ea75fc38ff4415d281ae9feb22a4f/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:29:9-33:20
+96            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+96-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/e78ea75fc38ff4415d281ae9feb22a4f/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:30:13-85
+97            android:enabled="true"
+97-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/e78ea75fc38ff4415d281ae9feb22a4f/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:31:13-35
+98            android:exported="false" >
+98-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/e78ea75fc38ff4415d281ae9feb22a4f/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:32:13-37
+99        </receiver>
+100        <receiver
+100-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/e78ea75fc38ff4415d281ae9feb22a4f/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:34:9-42:20
+101            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+101-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/e78ea75fc38ff4415d281ae9feb22a4f/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:35:13-100
+102            android:enabled="true"
+102-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/e78ea75fc38ff4415d281ae9feb22a4f/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:36:13-35
+103            android:exported="true"
+103-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/e78ea75fc38ff4415d281ae9feb22a4f/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:37:13-36
+104            android:permission="android.permission.INSTALL_PACKAGES" >
+104-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/e78ea75fc38ff4415d281ae9feb22a4f/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:38:13-69
+105            <intent-filter>
+105-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/e78ea75fc38ff4415d281ae9feb22a4f/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:39:13-41:29
+106                <action android:name="com.android.vending.INSTALL_REFERRER" />
+106-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/e78ea75fc38ff4415d281ae9feb22a4f/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:40:17-79
+106-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/e78ea75fc38ff4415d281ae9feb22a4f/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:40:25-76
+107            </intent-filter>
+108        </receiver>
+109
+110        <service
+110-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/e78ea75fc38ff4415d281ae9feb22a4f/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:44:9-47:40
+111            android:name="com.google.android.gms.measurement.AppMeasurementService"
+111-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/e78ea75fc38ff4415d281ae9feb22a4f/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:45:13-84
+112            android:enabled="true"
+112-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/e78ea75fc38ff4415d281ae9feb22a4f/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:46:13-35
+113            android:exported="false" />
+113-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/e78ea75fc38ff4415d281ae9feb22a4f/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:47:13-37
+114        <service
+114-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/e78ea75fc38ff4415d281ae9feb22a4f/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:48:9-52:72
+115            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+115-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/e78ea75fc38ff4415d281ae9feb22a4f/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:49:13-87
+116            android:enabled="true"
+116-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/e78ea75fc38ff4415d281ae9feb22a4f/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:50:13-35
+117            android:exported="false"
+117-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/e78ea75fc38ff4415d281ae9feb22a4f/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:51:13-37
+118            android:permission="android.permission.BIND_JOB_SERVICE" />
+118-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/e78ea75fc38ff4415d281ae9feb22a4f/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:52:13-69
+119
+120        <provider
+120-->[com.google.firebase:firebase-common:19.3.0] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/3deb10f8139ef5717b3d54ada2a19ca4/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+121            android:name="com.google.firebase.provider.FirebaseInitProvider"
+121-->[com.google.firebase:firebase-common:19.3.0] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/3deb10f8139ef5717b3d54ada2a19ca4/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+122            android:authorities="com.example.locationbasedcampaign.firebaseinitprovider"
+122-->[com.google.firebase:firebase-common:19.3.0] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/3deb10f8139ef5717b3d54ada2a19ca4/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+123            android:exported="false"
+123-->[com.google.firebase:firebase-common:19.3.0] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/3deb10f8139ef5717b3d54ada2a19ca4/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+124            android:initOrder="100" />
+124-->[com.google.firebase:firebase-common:19.3.0] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/3deb10f8139ef5717b3d54ada2a19ca4/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+125
+126        <meta-data
+126-->[com.google.android.gms:play-services-basement:17.0.0] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/164bb505b81f338baa0db13edd04c1d1/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+127            android:name="com.google.android.gms.version"
+127-->[com.google.android.gms:play-services-basement:17.0.0] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/164bb505b81f338baa0db13edd04c1d1/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+128            android:value="@integer/google_play_services_version" />
+128-->[com.google.android.gms:play-services-basement:17.0.0] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/164bb505b81f338baa0db13edd04c1d1/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+129
+130        <provider
+130-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/05159317f21a2dd1d02987b6e5d9b612/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
+131            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+131-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/05159317f21a2dd1d02987b6e5d9b612/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
+132            android:authorities="com.example.locationbasedcampaign.lifecycle-process"
+132-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/05159317f21a2dd1d02987b6e5d9b612/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
+133            android:exported="false"
+133-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/05159317f21a2dd1d02987b6e5d9b612/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
+134            android:multiprocess="true" />
+134-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/zehrasarac/.gradle/caches/transforms-2/files-2.1/05159317f21a2dd1d02987b6e5d9b612/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
+135    </application>
+136
+137</manifest>

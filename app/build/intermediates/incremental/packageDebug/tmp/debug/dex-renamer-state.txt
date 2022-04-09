@@ -1,0 +1,4 @@
+#Fri May 29 21:57:27 EET 2020
+base.0=/Users/zehrasarac/Desktop/LocationBasedCampaign2/app/build/intermediates/dex/debug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
